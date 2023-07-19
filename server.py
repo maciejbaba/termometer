@@ -6,12 +6,15 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    arduino = serial.Serial("/dev/ttyUSB0", 9600)
-    arduino_data = arduino.readline()
-    data = arduino_data.decode("utf-8")
-    list = data.split(" ")
-    temp = list[0]
-    hum = list[1]
+    #arduino = serial.Serial("/dev/ttyUSB0", 9600)
+    #arduino_data = arduino.readline()
+    #data = arduino_data.decode("utf-8")
+    #list = data.split(" ")
+    #temp = list[0]
+    #hum = list[1]
+
+    temp = "20"
+    hum = "50"
 
     website = (
         """
@@ -23,7 +26,7 @@ def index():
               margin-top: 35vh;
               background-color: #000000;
               font-family: "Open Sans", sans-serif;
-              font-size: 30px;
+              font-size: 2rem;
               color: #ffffff;
           }
           h1 {
