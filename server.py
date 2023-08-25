@@ -22,11 +22,14 @@ def index():
         <style>
           body {
               height: 100vh;
+              margin: 0;
+              padding: 0;
               background-color: #000000;
               font-family: "Open Sans", sans-serif;
               font-size: 2rem;
               color: #ffffff;
               display: flex;
+              gap: 1rem;
               flex-direction: column;
               justify-content: center;
               align-items: center;
@@ -34,6 +37,8 @@ def index():
           h1 {
               text-align: center;
               font-weight: 300;
+              margin: 0;
+              padding: 0;
           }
           p {
               text-align: center;
