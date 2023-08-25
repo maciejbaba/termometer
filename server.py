@@ -21,11 +21,15 @@ def index():
         <meta name="viewport" content="device-width,initial-scale=1" />
         <style>
           body {
-              margin-top: 35vh;
+              height: 100vh;
               background-color: #000000;
               font-family: "Open Sans", sans-serif;
               font-size: 2rem;
               color: #ffffff;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
           }
           h1 {
               text-align: center;
@@ -37,13 +41,15 @@ def index():
         </style>
       </head>
       <body>
-        <h1>DHT11 Weather Station</h1>
-        <p><strong>Temperature:</strong> """
+        <div>
+          <h1>DHT11 Weather Station</h1>
+          <p><strong>Temperature:</strong> """
         + temp
         + """°C</p>
-        <p><strong>Humidity:</strong> """
+          <p><strong>Humidity:</strong> """
         + hum
         + """%</p>
+        </div>
       </body>
     </html>"""
     )
