@@ -18,6 +18,7 @@ def index():
     <html>
       <head>
         <title>DHT11 Weather Station</title>
+        <meta name="viewport" content="device-width,initial-scale=1" />
         <style>
           body {
               margin-top: 35vh;
